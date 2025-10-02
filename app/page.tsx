@@ -1,103 +1,265 @@
-import Image from "next/image";
+import { Github, Mail, Twitter } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <section className="min-h-[80vh] flex items-center justify-center px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+            Michael Martinez
+          </h1>
+          <h2 className="text-2xl md:text-3xl text-gray-700 mb-8">
+            Full Stack Developer
+          </h2>
+          <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+            Recent Cloud Computing graduate building full-stack applications with
+            React, Next.js, TypeScript, and PostgreSQL. Focused on creating clean,
+            user-friendly solutions to real-world problems.
+          </p>
+          <div className="flex gap-4 justify-center flex-wrap">
+            <a
+              href="https://github.com/Martimic10"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition"
+            >
+              <Github size={20} />
+              GitHub
+            </a>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <a
+              href="mailto:Martinezmichael37@yahoo.com"
+              className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            >
+              <Mail size={20} />
+              Contact Me
+            </a>
+
+            <a
+              href="https://x.com/Martimic10"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-3 bg-sky-500 text-white rounded-lg hover:bg-sky-600 transition"
+            >
+              <Twitter size={20} />
+              Twitter
+            </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* About Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">About Me</h2>
+          <div className="prose prose-lg text-gray-700">
+            <p className="mb-4">
+              I'm a full-stack developer with an Associate's degree in Cloud
+              Computing from Wichita State University Campus of Applied Sciences
+              and Technology (2024). I specialize in building modern web
+              applications using React, Next.js, and TypeScript.
+            </p>
+            <p className="mb-4">
+              My approach to development focuses on writing clean, maintainable
+              code and creating intuitive user experiences. I'm passionate about
+              solving real problems through technology and continuously learning
+              new tools and techniques.
+            </p>
+            <p>
+              Currently seeking opportunities where I can contribute to meaningful
+              projects while growing as a developer. Open to remote positions or
+              relocation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-900 mb-12">Projects</h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Job Tracker Project */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Job Application Tracker
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  A full-stack web application for tracking job applications with
+                  user authentication and private data storage.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    Next.js
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    TypeScript
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    Supabase
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                    Tailwind CSS
+                  </span>
+                </div>
+                <ul className="text-gray-700 mb-6 space-y-2">
+                  <li>• Secure authentication with Supabase Auth</li>
+                  <li>• CRUD operations for managing applications</li>
+                  <li>• Row-level security for data privacy</li>
+                  <li>• Responsive design for all devices</li>
+                </ul>
+                <div className="flex gap-3">
+                  <a
+                    href="https://github.com/Martimic10/job-application-tracker"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-800 transition"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-900 mb-12">Skills</h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Frontend</h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  React
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  Next.js
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  TypeScript
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  JavaScript
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  Tailwind CSS
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  HTML5
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  CSS3
+                </span>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Backend & Database
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  Node.js
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  PostgreSQL
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  Supabase
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  SQL
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  REST APIs
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  Authentication
+                </span>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Tools & Deployment
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  Git/GitHub
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  Vercel
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  VS Code
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  Docker
+                </span>
+                <span className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+                  AWS
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">
+            Get In Touch
+          </h2>
+          <p className="text-xl text-gray-600 mb-8">
+            I'm currently looking for new opportunities. Whether you have a
+            question or just want to say hi, feel free to reach out!
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="mailto:Martinezmichael37@yahoo.com"
+              className="flex items-center gap-2 px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-lg"
+            >
+              <Mail size={22} />
+              Send Email
+            </a>
+
+            <a
+              href="https://github.com/Martimic10"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-8 py-4 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition text-lg"
+            >
+              <Github size={22} />
+              View GitHub
+            </a>
+
+            <a
+              href="https://x.com/Martimic10"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-8 py-4 bg-sky-500 text-white rounded-lg hover:bg-sky-600 transition text-lg"
+            >
+              <Twitter size={22} />
+              Twitter
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 px-4 bg-gray-900 text-white text-center">
+        <p>© 2025 Michael Martinez. Built with Next.js and Tailwind CSS.</p>
       </footer>
-    </div>
+    </main>
   );
 }
+
+
