@@ -55,14 +55,14 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-gray-900 mb-8">About Me</h2>
           <div className="prose prose-lg text-gray-700">
             <p className="mb-4">
-              I'm a full-stack developer with an Associate's degree in Cloud
+              I am a full-stack developer with an Associates degree in Cloud
               Computing from Wichita State University Campus of Applied Sciences
               and Technology (2024). I specialize in building modern web
               applications using React, Next.js, and TypeScript.
             </p>
             <p className="mb-4">
               My approach to development focuses on writing clean, maintainable
-              code and creating intuitive user experiences. I'm passionate about
+              code and creating intuitive user experiences. I am passionate about
               solving real problems through technology and continuously learning
               new tools and techniques.
             </p>
@@ -219,7 +219,7 @@ export default function Home() {
             Get In Touch
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            I'm currently looking for new opportunities. Whether you have a
+            I am currently looking for new opportunities. Whether you have a
             question or just want to say hi, feel free to reach out!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
