@@ -1,4 +1,4 @@
-import { Github, Mail, Twitter } from "lucide-react";
+import { Github, Mail, Twitter, ExternalLink } from "lucide-react";
 
 export default function Home() {
   return (
@@ -81,8 +81,66 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-gray-900 mb-12">Projects</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
+            {/* Arc AI Landing Page */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <h3 className="text-3xl font-bold mb-2">Arc AI</h3>
+                  <p className="text-lg opacity-90">AI Code Editor</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Arc AI Landing Page
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Modern landing page for an AI code editor platform featuring animated gradients, interactive hover effects, and responsive design.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">
+                    React
+                  </span>
+                  <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">
+                    Vite
+                  </span>
+                  <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">
+                    Tailwind CSS
+                  </span>
+                  <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">
+                    Lucide Icons
+                  </span>
+                </div>
+                <ul className="text-gray-700 mb-6 space-y-2">
+                  <li>• Animated gradient hero title</li>
+                  <li>• Interactive company logo hover effects</li>
+                  <li>• Dynamic pricing toggle (yearly/monthly)</li>
+                  <li>• Matrix-style animated background</li>
+                  <li>• Fully responsive design</li>
+                </ul>
+                <div className="flex gap-3">
+                  <a
+                    href="https://arc-ai-eight.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded hover:shadow-lg transition"
+                  >
+                    <ExternalLink size={18} />
+                    Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/Martimic10/arc-ai-landing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-800 transition"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+
             {/* Job Tracker Project */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   Job Application Tracker
