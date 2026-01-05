@@ -26,6 +26,17 @@ const Navbar = ({ theme, toggleTheme }) => {
     setMobileMenuOpen(!mobileMenuOpen)
   }
 
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [mobileMenuOpen])
+
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
@@ -87,6 +98,13 @@ const Navbar = ({ theme, toggleTheme }) => {
           )}
         </button>
       </div>
+
+      {mobileMenuOpen && (
+        <div
+          className="mobile-overlay"
+          onClick={() => setMobileMenuOpen(false)}
+        />
+      )}
     </nav>
   )
 }
