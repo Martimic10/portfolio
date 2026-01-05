@@ -201,17 +201,67 @@
 }
 
 /* Responsive */
+@media (max-width: 968px) {
+  .projects {
+    padding: 3rem 1.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .projects {
     padding: 3rem 1rem;
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .title-number {
+    font-size: 1.3rem;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-thumbnail {
+    height: 220px;
+  }
+
+  .project-content {
+    padding: 1.25rem;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects {
+    padding: 2.5rem 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .title-number {
+    font-size: 1.1rem;
   }
 
   .project-thumbnail {
@@ -220,21 +270,84 @@
 }
 
 @media (max-width: 480px) {
+  .projects {
+    padding: 2rem 0.75rem;
+  }
+
   .section-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.5rem;
   }
 
   .title-line {
     width: 100%;
+    height: 1px;
   }
 
   .section-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+  }
+
+  .title-number {
+    font-size: 1rem;
+  }
+
+  .project-card {
+    border-radius: 12px;
+  }
+
+  .project-thumbnail {
+    height: 180px;
+  }
+
+  .project-content {
+    padding: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .project-tech {
+    gap: 0.75rem;
   }
 
   .tech-icon {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .tech-icon::before {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .project-link {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 375px) {
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .project-thumbnail {
+    height: 160px;
+  }
+
+  .tech-icon {
+    width: 25px;
+    height: 25px;
   }
 }

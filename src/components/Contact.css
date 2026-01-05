@@ -187,6 +187,10 @@
 
 /* Responsive */
 @media (max-width: 968px) {
+  .contact {
+    padding: 3rem 1.5rem;
+  }
+
   .contact-content {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -196,30 +200,150 @@
     font-size: 2rem;
   }
 
+  .contact-description {
+    font-size: 1.05rem;
+  }
+
   .social-links {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .social-link {
+    padding: 1.75rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .contact {
     padding: 3rem 1rem;
   }
 
   .contact-heading {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .contact-description {
     font-size: 1rem;
   }
 
+  .social-link {
+    padding: 1.5rem;
+  }
+
+  .social-icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact {
+    padding: 2.5rem 1rem;
+  }
+
+  .contact-heading {
+    font-size: 1.6rem;
+  }
+
+  .contact-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 2rem 0.75rem;
+  }
+
+  .contact-content {
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .contact-heading {
+    font-size: 1.4rem;
+  }
+
+  .contact-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .resume-section {
+    margin-top: 1.5rem;
+  }
+
+  .resume-button {
+    padding: 0.9rem 1.75rem;
+    font-size: 0.85rem;
+    width: 100%;
+    justify-content: center;
+  }
+
   .social-links {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .social-link {
+    padding: 1.25rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1.25rem;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-name {
+    font-size: 0.85rem;
+  }
+
+  .footer {
+    padding-top: 2rem;
+  }
+
+  .footer p {
+    font-size: 0.85rem;
+  }
+
+  .footer-year {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact-heading {
+    font-size: 1.3rem;
+  }
+
+  .contact-description {
+    font-size: 0.85rem;
   }
 
   .resume-button {
     padding: 0.8rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .social-link {
+    padding: 1rem;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .social-name {
     font-size: 0.8rem;
   }
 }

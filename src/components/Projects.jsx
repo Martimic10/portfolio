@@ -46,6 +46,15 @@ const Projects = () => {
       technologies: ['react', 'typescript', 'tailwind'],
       githubUrl: 'https://github.com/Martimic10/CodeZap',
       liveUrl: 'https://code-zap-lovat.vercel.app'
+    },
+    {
+      id: 6,
+      title: 'Vorg AI',
+      description: 'An AI-powered landing page generator that creates stunning, conversion-focused landing pages in seconds.',
+      thumbnail: '/images/VorgAI-logo.png',
+      technologies: ['react', 'tailwind', 'typescript', 'openai'],
+      githubUrl: 'https://github.com/Martimic10/Vorgai',
+      liveUrl: 'https://vorg.dev'
     }
   ]
 
