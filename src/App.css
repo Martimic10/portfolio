@@ -19,7 +19,7 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
   background-color: #0a1628;
 }
 
@@ -32,18 +32,17 @@ body {
   -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
-  background-color: #0a1628;
+  background-image: url('/images/river-landscape-illustration-pixel-art-background.png.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .app {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  background-image: url('/images/river-landscape-illustration-pixel-art-background.png.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
 }
 
 .main-content {
