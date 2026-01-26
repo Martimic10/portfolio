@@ -160,6 +160,13 @@ html {
     font-size: 16px;
   }
 
+  /* Fix background for mobile - iOS doesn't support fixed attachment */
+  body {
+    background-attachment: scroll;
+    background-size: auto 100%;
+    background-position: top center;
+  }
+
   /* Improve touch targets */
   button, a, .nav-link, .cta-button {
     min-height: 44px;
