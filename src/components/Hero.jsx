@@ -16,7 +16,7 @@ const Hero = () => {
             <span className="glitch" data-text="Michael Martinez">Michael Martinez</span>
           </h1>
           <h2 className="hero-subtitle">
-            <span className="typing-text">FULL STACK DEVELOPER</span>
+            <span className="typing-text">FRONTEND DEVELOPER</span>
           </h2>
           <p className="hero-description">
             Passionate about building intuitive, high-performing digital products that merge design and functionality.
