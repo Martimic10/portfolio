@@ -132,7 +132,7 @@
 
 .cta-button.primary {
   background: var(--accent-primary);
-  color: var(--bg-primary);
+  color: #0a0e27;
 }
 
 .cta-button.primary:hover {
@@ -150,7 +150,7 @@
 }
 
 .cta-button.secondary:hover {
-  color: var(--bg-primary);
+  color: #0a0e27;
   transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
 }
