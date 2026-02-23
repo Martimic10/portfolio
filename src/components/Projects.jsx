@@ -55,6 +55,15 @@ const Projects = () => {
       technologies: ['react', 'tailwind', 'typescript', 'openai'],
       githubUrl: 'https://github.com/Martimic10/Vorgai',
       liveUrl: 'https://vorg.dev'
+    },
+    {
+      id: 7,
+      title: 'Exact AI',
+      description: 'An AI-powered frontend code editor built specifically for frontend development, enabling developers to build UI faster with intelligent code generation.',
+      thumbnail: '/images/ExactAI-logo.png',
+      technologies: ['typescript', 'nextjs', 'electron', 'openrouter'],
+      githubUrl: 'https://github.com/Martimic10/Exact-AI',
+      liveUrl: '#'
     }
   ]
 
@@ -78,7 +87,9 @@ const Projects = () => {
     openai: 'https://cdn.worldvectorlogo.com/logos/openai-2.svg',
     canvas: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
     phaser: '/images/phaser-logo.png',
-    tensorflow: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg'
+    tensorflow: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
+    electron: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg',
+    openrouter: 'https://openrouter.ai/favicon.ico'
   }
 
   return (
