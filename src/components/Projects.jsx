@@ -60,10 +60,10 @@ const Projects = () => {
       id: 7,
       title: 'Exact AI',
       description: 'An AI-powered frontend code editor built specifically for frontend development, enabling developers to build UI faster with intelligent code generation.',
-      thumbnail: '/images/ExactAI-logo.png',
+      thumbnail: '/images/Exact-ai-portfolio.png',
       technologies: ['typescript', 'nextjs', 'electron', 'openrouter'],
-      githubUrl: 'https://github.com/Martimic10/Exact-AI',
-      liveUrl: '#'
+      githubUrl: 'https://github.com/Martimic10/Exact-landing-page',
+      liveUrl: 'https://exactai.dev'
     }
   ]
 
