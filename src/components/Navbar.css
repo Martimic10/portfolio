@@ -25,6 +25,27 @@
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
+.nav-logo {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.nav-logo img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  transition: opacity 0.2s ease;
+}
+
+.nav-logo:hover img {
+  opacity: 0.8;
+}
+
 .nav-links {
   display: flex;
   gap: 1.5rem;
