@@ -1,27 +1,35 @@
 import { useNavigate } from 'react-router-dom'
 import { projects, techLogos } from '../data/projectsData'
-import './Projects.css'
+import './ProjectsPage.css'
 
-const Projects = () => {
+const ProjectsPage = () => {
   const navigate = useNavigate()
-  const featuredProjects = projects.slice(0, 3)
 
   return (
-    <section id="projects" className="projects">
-      <div className="projects-container">
-        <div className="section-header">
-          <h2 className="section-title">
-            <span className="title-number">02.</span> FEATURED PROJECTS
-          </h2>
-          <div className="title-line"></div>
+    <div className="projects-page">
+      <div className="projects-page-container">
+        <div className="projects-page-header">
+          <button className="back-btn" onClick={() => navigate('/')}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+            BACK
+          </button>
+          <div className="section-header">
+            <h2 className="section-title">
+              <span className="title-number">ALL</span> PROJECTS
+            </h2>
+            <div className="title-line"></div>
+          </div>
         </div>
 
         <div className="projects-grid">
-          {featuredProjects.map((project, index) => (
+          {projects.map((project, index) => (
             <div
               key={project.id}
               className="project-card"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              style={{ animationDelay: `${index * 0.08}s` }}
             >
               <div className="project-thumbnail">
                 <img
@@ -80,19 +88,9 @@ const Projects = () => {
             </div>
           ))}
         </div>
-
-        <div className="view-more-container">
-          <button className="view-more-btn" onClick={() => navigate('/projects')}>
-            VIEW ALL PROJECTS
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <line x1="5" y1="12" x2="19" y2="12"/>
-              <polyline points="12 5 19 12 12 19"/>
-            </svg>
-          </button>
-        </div>
       </div>
-    </section>
+    </div>
   )
 }
 
-export default Projects
+export default ProjectsPage
