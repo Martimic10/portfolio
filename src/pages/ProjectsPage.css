@@ -3,7 +3,7 @@
 
 .projects-page {
   min-height: 100vh;
-  padding: 6rem 2rem 4rem;
+  padding: 8rem 2rem 4rem;
   display: flex;
   justify-content: center;
 }
@@ -19,7 +19,7 @@
 
 @media (max-width: 968px) {
   .projects-page {
-    padding: 5rem 1.5rem 3rem;
+    padding: 7rem 1.5rem 3rem;
   }
 
   .projects-page-header {
@@ -29,13 +29,13 @@
 
 @media (max-width: 768px) {
   .projects-page {
-    padding: 5rem 1rem 3rem;
+    padding: 7rem 1rem 3rem;
   }
 }
 
 @media (max-width: 480px) {
   .projects-page {
-    padding: 4.5rem 0.75rem 2.5rem;
+    padding: 6.5rem 0.75rem 2.5rem;
   }
 
   .projects-page-header {

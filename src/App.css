@@ -60,7 +60,7 @@ body {
 .main-content {
   position: relative;
   z-index: 1;
-  padding-top: 80px;
+  padding-top: 110px;
 }
 
 h1, h2, h3 {
@@ -186,7 +186,7 @@ html {
 
   /* Better spacing for mobile */
   .main-content {
-    padding-top: 70px;
+    padding-top: 100px;
   }
 }
 
