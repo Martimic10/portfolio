@@ -17,44 +17,28 @@
   margin-bottom: 3rem;
 }
 
-.back-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: transparent;
-  border: 1px solid var(--card-border);
-  color: var(--text-secondary);
-  font-family: 'Orbitron', sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-bottom: 2rem;
-}
-
-.back-btn:hover {
-  color: var(--accent-primary);
-  border-color: var(--accent-primary);
-}
-
-.back-btn svg {
-  transition: transform 0.3s ease;
-}
-
-.back-btn:hover svg {
-  transform: translateX(-4px);
-}
-
 @media (max-width: 968px) {
   .projects-page {
     padding: 5rem 1.5rem 3rem;
+  }
+
+  .projects-page-header {
+    margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 768px) {
   .projects-page {
     padding: 5rem 1rem 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-page {
+    padding: 4.5rem 0.75rem 2.5rem;
+  }
+
+  .projects-page-header {
+    margin-bottom: 1.5rem;
   }
 }
