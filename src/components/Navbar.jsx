@@ -57,9 +57,6 @@ const Navbar = () => {
         </button>
 
         <div className={`nav-links ${mobileMenuOpen ? 'mobile-active' : ''}`}>
-          <button onClick={() => scrollToSection('home')} className="nav-link">
-            HOME
-          </button>
           <button onClick={() => { navigate('/projects'); setMobileMenuOpen(false) }} className="nav-link">
             PROJECTS
           </button>
