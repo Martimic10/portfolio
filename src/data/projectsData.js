@@ -68,8 +68,8 @@ export const projects = [
     description: 'A VS Code extension that lets you find code from memory. Just type what you remember and it jumps you to the exact line instantly.',
     thumbnail: '/images/Jump-hero-logo.png',
     technologies: ['typescript', 'javascript', 'vscode', 'nodejs', 'github', 'vercel'],
-    githubUrl: 'https://github.com/Martimic10/Jump',
-    liveUrl: '#'
+    githubUrl: 'https://github.com/Martimic10/Jump-vsc-extension',
+    liveUrl: 'https://jump-plum-eight.vercel.app/'
   }
 ]
 
