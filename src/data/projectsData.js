@@ -66,7 +66,7 @@ export const projects = [
     id: 8,
     title: 'Jump',
     description: 'A VS Code extension that lets you find code from memory. Just type what you remember and it jumps you to the exact line instantly.',
-    thumbnail: '/images/Jump-logo.png',
+    thumbnail: '/images/Jump-hero-logo.png',
     technologies: ['typescript', 'javascript', 'vscode', 'nodejs', 'github', 'vercel'],
     githubUrl: 'https://github.com/Martimic10/Jump',
     liveUrl: '#'
