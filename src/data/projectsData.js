@@ -61,6 +61,15 @@ export const projects = [
     technologies: ['typescript', 'nextjs', 'electron', 'openrouter'],
     githubUrl: 'https://github.com/Martimic10/Exact-landing-page',
     liveUrl: 'https://exactai.dev'
+  },
+  {
+    id: 8,
+    title: 'Jump',
+    description: 'A VS Code extension that lets you find code from memory. Just type what you remember and it jumps you to the exact line instantly.',
+    thumbnail: '/images/Jump-logo.png',
+    technologies: ['typescript', 'javascript', 'vscode', 'nodejs', 'github', 'vercel'],
+    githubUrl: 'https://github.com/Martimic10/Jump',
+    liveUrl: '#'
   }
 ]
 
@@ -85,5 +94,9 @@ export const techLogos = {
   phaser: '/images/phaser-logo.png',
   tensorflow: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
   electron: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg',
-  openrouter: 'https://openrouter.ai/favicon.ico'
+  openrouter: 'https://openrouter.ai/favicon.ico',
+  javascript: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+  vscode: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
+  vercel: 'https://cdn.worldvectorlogo.com/logos/vercel.svg',
+  github: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
 }
