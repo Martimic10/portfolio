@@ -1,12 +1,20 @@
+import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { projects, techLogos } from '../data/projectsData'
+import Navbar from '../components/Navbar'
 import './ProjectsPage.css'
 
 const ProjectsPage = () => {
   const navigate = useNavigate()
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
-    <div className="projects-page">
+    <>
+      <Navbar />
+      <div className="projects-page">
       <div className="projects-page-container">
         <div className="projects-page-header">
           <button className="back-btn" onClick={() => navigate('/')}>
@@ -90,6 +98,7 @@ const ProjectsPage = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
