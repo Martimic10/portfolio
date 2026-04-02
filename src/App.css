@@ -24,6 +24,7 @@ html {
 }
 
 body {
+  background: #0a1628;
   font-family: 'Rajdhani', sans-serif;
   color: var(--text-primary);
   overflow-x: hidden;
@@ -41,20 +42,14 @@ body {
   width: 100%;
 }
 
-/* Background using pseudo-element - works on mobile */
-.app::before {
-  content: '';
+.background-component {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
-  background-image: url('/images/river-landscape-illustration-pixel-art-background.png.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  z-index: 0;
   pointer-events: none;
+  background: #0a1628;
 }
 
 .main-content {

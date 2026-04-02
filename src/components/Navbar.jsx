@@ -33,9 +33,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        <button className="nav-logo" onClick={() => scrollToSection('home')} aria-label="Home">
-          <img src="/images/portfolio-logo-removebg-preview.png" alt="Logo" />
-        </button>
+        <div className="nav-logo-placeholder" aria-hidden="true" />
 
         <button
           className="mobile-menu-toggle"

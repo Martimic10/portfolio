@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
+import CircuitBackground from './components/CircuitBackground'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Projects from './components/Projects'
@@ -25,6 +26,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="app">
+        <CircuitBackground className="background-component" />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
