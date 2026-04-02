@@ -4,8 +4,7 @@ A modern, futuristic developer portfolio built with React and Vite, featuring a 
 
 ## Features
 
-- **Animated Circuit Grid Background** - Dynamic circuit board pattern with pulsing animations
-- **Dark/Light Theme Toggle** - Switch between dark circuit grid and clean white theme
+- **Animated Circuit Grid Background** - Dynamic Particles background covering the whole site
 - **Pill-Shaped Navigation** - Modern pill-shaped navbar with smooth scrolling
 - **Futuristic Typography** - Orbitron and Rajdhani fonts for a robotic aesthetic
 - **Project Showcase** - Cards with thumbnail images and technology logo badges
