@@ -175,6 +175,16 @@
   filter: drop-shadow(0 0 10px var(--accent-primary));
 }
 
+.tech-icon[title="VERCEL"] img,
+.tech-icon[title="OPENAI"] img {
+  filter: invert(1);
+}
+
+.tech-icon[title="VERCEL"]:hover img,
+.tech-icon[title="OPENAI"]:hover img {
+  filter: invert(1) drop-shadow(0 0 10px var(--accent-primary));
+}
+
 /* Tooltip for tech names */
 .tech-icon::before {
   content: attr(title);

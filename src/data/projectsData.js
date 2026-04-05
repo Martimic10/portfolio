@@ -70,6 +70,15 @@ export const projects = [
     technologies: ['typescript', 'javascript', 'vscode', 'nodejs', 'github', 'vercel'],
     githubUrl: 'https://github.com/Martimic10/Jump-vsc-extension',
     liveUrl: 'https://jump-plum-eight.vercel.app/'
+  },
+  {
+    id: 9,
+    title: 'FridgeFlow',
+    description: 'An AI-powered app that analyzes photos of your fridge or pantry to instantly generate personalized recipes and meal ideas from what you already have.',
+    thumbnail: '/images/fridgeflow-project-image.png',
+    technologies: ['react', 'typescript', 'openrouter', 'stripe', 'vercel'],
+    githubUrl: 'https://github.com/Martimic10/FridgeFlow',
+    liveUrl: 'https://fridge-flow-brown.vercel.app/'
   }
 ]
 
@@ -98,5 +107,6 @@ export const techLogos = {
   javascript: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
   vscode: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
   vercel: 'https://cdn.worldvectorlogo.com/logos/vercel.svg',
-  github: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
+  github: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+  stripe: 'https://cdn.worldvectorlogo.com/logos/stripe-4.svg'
 }
