@@ -1,225 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
+/* ── Theme Variables ── */
 :root {
-  --bg-primary: transparent;
-  --bg-secondary: rgba(0, 0, 0, 0.3);
-  --text-primary: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.85);
-  --accent-primary: #00d9ff;
-  --accent-secondary: #7b2cbf;
-  --accent-glow: #00d9ff;
-  --card-bg: rgba(0, 0, 0, 0.5);
-  --card-border: rgba(255, 255, 255, 0.25);
-  --button-text: #0a0e27;
+  --sidebar-width: 240px;
 }
 
-* {
+[data-theme="dark"] {
+  --bg: #0f0f0f;
+  --surface: #161616;
+  --surface-hover: #1e1e1e;
+  --border: #252525;
+  --text: #e8e8e8;
+  --text-muted: #777;
+  --text-faint: #444;
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+  --card-bg: #141414;
+  --card-border: #222;
+  --overlay: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="light"] {
+  --bg: #f7f7f7;
+  --surface: #ffffff;
+  --surface-hover: #f0f0f0;
+  --border: #e2e2e2;
+  --text: #111111;
+  --text-muted: #888;
+  --text-faint: #ccc;
+  --accent: #4f46e5;
+  --accent-hover: #6366f1;
+  --card-bg: #ffffff;
+  --card-border: #e8e8e8;
+  --overlay: rgba(0, 0, 0, 0.5);
+}
+
+/* ── Reset & Base ── */
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html {
-  background-color: #0a1628;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: #0a1628;
-  font-family: 'Rajdhani', sans-serif;
-  color: var(--text-primary);
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: transparent;
-  margin: 0;
-  padding: 0;
-  background: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.app {
-  position: relative;
+#root {
   min-height: 100vh;
-  width: 100%;
 }
 
-.background-component {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-  pointer-events: none;
-  background: #0a1628;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ── Layout ── */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
 }
 
 .main-content {
-  position: relative;
-  z-index: 1;
-  padding-top: 110px;
+  margin-left: var(--sidebar-width);
+  flex: 1;
+  min-height: 100vh;
 }
 
-h1, h2, h3 {
-  font-family: 'Orbitron', sans-serif;
+/* ── Section Base ── */
+.section-header {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.03em;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+.title-line {
+  width: 40px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
 }
 
-/* Selection styling */
-::selection {
-  background-color: var(--accent-primary);
-  color: var(--bg-primary);
-}
-
-/* Glow effect utility */
-.glow {
-  text-shadow: 0 0 10px var(--accent-glow),
-               0 0 20px var(--accent-glow),
-               0 0 30px var(--accent-glow);
-}
-
-/* Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-/* Scrollbar styling */
+/* ── Scrollbar ── */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
+  background: var(--bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent-primary);
-  border-radius: 5px;
+  background: var(--border);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-secondary);
+  background: var(--text-muted);
 }
 
-/* Mobile-specific optimizations */
-@media (max-width: 968px) {
-  html {
-    font-size: 16px;
-  }
+/* ── Selection ── */
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
 
-  /* Improve touch targets */
-  button, a, .nav-link, .cta-button {
-    min-height: 44px;
-    min-width: 44px;
-  }
+/* ── Animations ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 
-  /* Prevent text size adjustment on orientation change */
-  html {
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-  }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
-  /* Better spacing for mobile */
+/* ── Mobile ── */
+@media (max-width: 768px) {
   .main-content {
-    padding-top: 100px;
-  }
-}
-
-@media (max-width: 640px) {
-  /* Reduce animations for better mobile performance */
-  * {
-    animation-duration: 0.4s !important;
+    margin-left: 0;
+    padding-top: 60px; /* offset for mobile top bar */
   }
 
-  /* Optimize font sizes for readability */
-  html {
-    font-size: 15px;
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  html {
-    font-size: 14px;
-  }
-
-  .main-content {
-    padding-top: 60px;
-  }
-}
-
-/* Touch device optimizations */
-@media (hover: none) and (pointer: coarse) {
-  /* Remove hover effects on touch devices */
-  .project-card:hover,
-  .skill-category:hover,
-  .social-link:hover {
-    transform: none;
-  }
-
-  /* Make hover effects work on tap */
-  .project-card:active,
-  .skill-category:active,
-  .social-link:active {
-    transform: translateY(-5px);
+  .section-title {
+    font-size: 1.35rem;
   }
 }
