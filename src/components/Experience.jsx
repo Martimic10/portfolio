@@ -4,7 +4,7 @@ const experiences = [
   {
     role: 'Frontend Developer',
     company: 'Workiva',
-    period: 'Feb 2024 – Mar 2025',
+    period: 'Jan 2025 – Mar 2026',
     bullets: [
       'Built and maintained responsive, high-performance frontend components using React and TypeScript',
       'Collaborated with design and backend teams to deliver clean, scalable UI systems',

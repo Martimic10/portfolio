@@ -138,6 +138,15 @@ img {
   color: #fff;
 }
 
+/* ── Dark-on-transparent icon fix ── */
+/* Logos like GitHub, Next.js, Express, Vercel are black SVGs — invert in dark mode */
+[data-theme="dark"] .icon-invert {
+  filter: invert(1);
+}
+[data-theme="light"] .icon-invert {
+  filter: none;
+}
+
 /* ── Animations ── */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }

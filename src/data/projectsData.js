@@ -91,6 +91,9 @@ export const projects = [
   }
 ]
 
+// Logos that are black/dark on transparent — need CSS invert in dark mode
+export const darkIcons = new Set(['github', 'nextjs', 'express', 'vercel', 'openai', 'mediapipe'])
+
 export const techLogos = {
   react: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
   nodejs: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',

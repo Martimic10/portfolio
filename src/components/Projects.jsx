@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { projects, techLogos } from '../data/projectsData'
+import { projects, techLogos, darkIcons } from '../data/projectsData'
 import './Projects.css'
 
 const Projects = () => {
@@ -69,6 +69,7 @@ const Projects = () => {
                         <img
                           src={techLogos[tech]}
                           alt={tech}
+                          className={darkIcons.has(tech) ? 'icon-invert' : ''}
                           onError={(e) => { e.target.style.display = 'none' }}
                         />
                       </div>

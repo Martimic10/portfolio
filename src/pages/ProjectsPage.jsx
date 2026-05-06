@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { projects, techLogos } from '../data/projectsData'
+import { projects, techLogos, darkIcons } from '../data/projectsData'
 import Navbar from '../components/Navbar'
 import './ProjectsPage.css'
 
@@ -73,6 +73,7 @@ const ProjectsPage = () => {
                           <img
                             src={techLogos[tech]}
                             alt={tech}
+                            className={darkIcons.has(tech) ? 'icon-invert' : ''}
                             onError={(e) => { e.target.style.display = 'none' }}
                           />
                         </div>
