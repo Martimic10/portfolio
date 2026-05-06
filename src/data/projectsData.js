@@ -79,6 +79,15 @@ export const projects = [
     technologies: ['react', 'typescript', 'openrouter', 'stripe', 'vercel'],
     githubUrl: 'https://github.com/Martimic10/FridgeFlow',
     liveUrl: 'https://fridge-flow-brown.vercel.app/'
+  },
+  {
+    id: 10,
+    title: 'ImpactAI',
+    description: 'An AI-powered golf swing analyzer that uses computer vision to detect, track, and score your swing mechanics in real time.',
+    thumbnail: '/images/ImpactAI-logo.png',
+    technologies: ['reactnative', 'typescript', 'openrouter', 'mediapipe', 'supabase', 'vercel'],
+    githubUrl: 'https://github.com/Martimic10/ImpactAI-landing',
+    liveUrl: 'https://impactai.golf'
   }
 ]
 
@@ -104,6 +113,9 @@ export const techLogos = {
   tensorflow: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
   electron: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg',
   openrouter: 'https://openrouter.ai/favicon.ico',
+  reactnative: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+  mediapipe: 'https://avatars.githubusercontent.com/u/65404757?s=200&v=4',
+  supabase: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg',
   javascript: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
   vscode: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
   vercel: 'https://cdn.worldvectorlogo.com/logos/vercel.svg',
