@@ -82,6 +82,15 @@ export const projects = [
   },
   {
     id: 10,
+    title: 'AppFrames',
+    description: 'An App Store screenshot generator that lets you choose templates and customize them with your own mockups for polished, production-ready store assets.',
+    thumbnail: '/images/appframes-screenshot.png',
+    technologies: ['react', 'nextjs', 'tailwind', 'framermotion', 'jszip'],
+    githubUrl: 'https://github.com/Martimic10/AppFrames',
+    liveUrl: 'https://app-frames.vercel.app/'
+  },
+  {
+    id: 11,
     title: 'ImpactAI',
     description: 'An AI-powered golf swing analyzer that uses computer vision to detect, track, and score your swing mechanics in real time.',
     thumbnail: '/images/ImpactAI-logo.png',
@@ -92,7 +101,7 @@ export const projects = [
 ]
 
 // Logos that are black/dark on transparent — need CSS invert in dark mode
-export const darkIcons = new Set(['github', 'nextjs', 'express', 'vercel', 'openai', 'mediapipe'])
+export const darkIcons = new Set(['github', 'nextjs', 'express', 'vercel', 'openai', 'mediapipe', 'framermotion', 'jszip'])
 
 export const techLogos = {
   react: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
@@ -123,5 +132,7 @@ export const techLogos = {
   vscode: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
   vercel: 'https://cdn.worldvectorlogo.com/logos/vercel.svg',
   github: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
-  stripe: 'https://cdn.worldvectorlogo.com/logos/stripe-4.svg'
+  stripe: 'https://cdn.worldvectorlogo.com/logos/stripe-4.svg',
+  framermotion: 'https://cdn.simpleicons.org/framer',
+  jszip: 'https://cdn.simpleicons.org/javascript'
 }
