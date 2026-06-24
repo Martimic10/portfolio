@@ -25,7 +25,7 @@ const Hero = () => {
           <button className="cta-primary" onClick={scrollToProjects}>
             View Projects
           </button>
-          <a href="/images/Michael-Martinez.6.pdf" download className="cta-secondary">
+          <a href="/images/Michael-Martinez-resume-7.pdf" download className="cta-secondary">
             Download Resume
           </a>
         </div>

@@ -54,6 +54,7 @@
 .exp-company-logo {
   height: 20px;
   width: auto;
+  max-width: none;
   object-fit: contain;
   border-radius: 4px;
   opacity: 0.92;
@@ -61,8 +62,9 @@
 }
 
 .exp-company-logo.logo-icon {
-  height: 22px;
-  width: 22px;
+  height: 24px;
+  width: 24px;
+  min-width: 24px;
   border-radius: 6px;
 }
 

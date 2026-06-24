@@ -1,29 +1,21 @@
 import './Experience.css'
+import originLabsLogo from '../assets/OriginLabs-logo2.png'
 
 const experiences = [
   {
-    role: 'Founder & Lead Developer',
-    company: 'ImpactAI',
-    logo: '/images/ImpactAI-new-logo.png',
+    role: 'Founder & Full-Stack Developer',
+    company: 'OriginLabs',
+    logo: originLabsLogo,
     logoClass: 'logo-icon',
-    period: 'May 2026 – Present',
+    period: 'June 2026 – Present',
     bullets: [
-      'Leading development of an AI-powered golf platform focused on swing analysis, scoring, and social gameplay experiences',
-      'Built and optimized mobile-first interfaces, AI-driven analysis systems, and subscription infrastructure from the ground up',
-      'Architected modern frontend systems with a focus on performance, usability, and premium product design',
-      'Collaborated across product strategy and user experience to deliver a polished, engaging platform for golfers',
-    ],
-  },
-  {
-    role: 'Frontend Developer',
-    company: 'Workiva',
-    logo: '/images/workiva-logo.png',
-    period: 'Jan 2025 – Mar 2026',
-    bullets: [
-      'Built and maintained responsive, high-performance frontend components using React and TypeScript',
-      'Collaborated with design and backend teams to deliver clean, scalable UI systems',
-      'Improved user experience by optimizing page load performance and refining component architecture',
-      'Contributed to internal tools and dashboards with a focus on usability and clarity',
+      'Founded and operate an independent software studio focused on building and launching AI-powered web and mobile applications',
+      'Designed, developed, and deployed multiple SaaS products using React, Next.js, TypeScript, Supabase, Stripe, and modern AI APIs',
+      'Built end-to-end products including authentication systems, payment integrations, database architecture, responsive user interfaces, and AI-powered workflows',
+      'Led product strategy, UI/UX design, development, testing, deployment, and customer acquisition efforts',
+      'Integrated AI technologies including OpenAI-compatible APIs, image generation, conversational AI, and workflow automation',
+      'Deployed and managed production applications using Vercel, cloud infrastructure, and modern CI/CD practices',
+      'Rapidly validated product ideas through MVP development, user feedback, and iterative product improvements',
     ],
   },
 ]
