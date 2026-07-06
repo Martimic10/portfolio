@@ -1,12 +1,12 @@
 export const projects = [
   {
-    id: 1,
-    title: 'Juno',
-    description: 'An AI-powered chatbot delivering intelligent, context-aware conversations with seamless user experience.',
-    thumbnail: '/images/Juno-logo.png',
-    technologies: ['react', 'nodejs', 'openai', 'tailwind'],
-    githubUrl: 'https://github.com/Martimic10/Juno-Chatbot',
-    liveUrl: '#'
+    id: 12,
+    title: 'OriginLabs',
+    description: 'My independent software studio for designing, building, and launching AI-powered web and mobile products end-to-end.',
+    thumbnail: '/images/OriginLabs-hero.png',
+    technologies: ['react', 'nextjs', 'typescript', 'tailwind', 'supabase', 'stripe', 'vercel'],
+    githubUrl: null,
+    liveUrl: 'https://originlabs.space/'
   },
   {
     id: 2,
@@ -97,6 +97,15 @@ export const projects = [
     technologies: ['reactnative', 'typescript', 'openrouter', 'mediapipe', 'supabase', 'vercel'],
     githubUrl: 'https://github.com/Martimic10/ImpactAI-landing',
     liveUrl: 'https://impactai.golf'
+  },
+  {
+    id: 1,
+    title: 'Juno',
+    description: 'An AI-powered chatbot delivering intelligent, context-aware conversations with seamless user experience.',
+    thumbnail: '/images/Juno-logo.png',
+    technologies: ['react', 'nodejs', 'openai', 'tailwind'],
+    githubUrl: 'https://github.com/Martimic10/Juno-Chatbot',
+    liveUrl: '#'
   }
 ]
 

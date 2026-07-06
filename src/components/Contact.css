@@ -90,4 +90,8 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .social-link {
+    min-height: 44px;
+  }
 }

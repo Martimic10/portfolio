@@ -1,10 +1,9 @@
 import './Hero.css'
+import Globe3D from './ui/Globe3D'
 
-const cubelets = Array.from({ length: 27 }, (_, index) => ({
-  x: (index % 3) - 1,
-  y: (Math.floor(index / 3) % 3) - 1,
-  z: Math.floor(index / 9) - 1,
-}))
+const globeMarkers = [
+  { lat: 39.8283, lng: -98.5795, src: '/images/Milo-ai-logo.png', label: 'Michael Martinez — Kansas, USA' },
+]
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -31,29 +30,15 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero-visual" aria-hidden="true">
-        <div className="hero-cube-scene">
-          <div className="hero-cube">
-            {cubelets.map((cubelet, index) => (
-              <div
-                key={index}
-                className="cubelet"
-                style={{
-                  '--x': cubelet.x,
-                  '--y': cubelet.y,
-                  '--z': cubelet.z,
-                }}
-              >
-                <span className="cubelet-face cubelet-face-front"></span>
-                <span className="cubelet-face cubelet-face-back"></span>
-                <span className="cubelet-face cubelet-face-right"></span>
-                <span className="cubelet-face cubelet-face-left"></span>
-                <span className="cubelet-face cubelet-face-top"></span>
-                <span className="cubelet-face cubelet-face-bottom"></span>
-              </div>
-            ))}
-          </div>
-          <div className="hero-cube-shadow"></div>
-        </div>
+        <Globe3D
+          className="hero-globe"
+          markers={globeMarkers}
+          config={{
+            showAtmosphere: false,
+            bumpScale: 5,
+            autoRotateSpeed: 0.3,
+          }}
+        />
       </div>
     </section>
   )
