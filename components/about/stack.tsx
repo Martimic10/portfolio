@@ -15,12 +15,25 @@ const CHIPS: Chip[] = [
   { label: "React", slug: "react", bg: "#087EA4", fg: "#ffffff" },
   { label: "Next.js", slug: "nextdotjs", bg: "#1f1f1f", fg: "#ffffff" },
   { label: "TypeScript", slug: "typescript", bg: "#2F74C0", fg: "#ffffff" },
+  { label: "JavaScript", slug: "javascript", bg: "#F7DF1E", fg: "#0a0a0a" },
+  { label: "HTML5", slug: "html5", bg: "#E34F26", fg: "#ffffff" },
+  { label: "CSS3", slug: "css", bg: "#1572B6", fg: "#ffffff" },
+  { label: "Tailwind CSS", slug: "tailwindcss", bg: "#2BBCF5", fg: "#ffffff" },
+  { label: "Node.js", slug: "nodedotjs", bg: "#3C873A", fg: "#ffffff" },
   { label: "Supabase", slug: "supabase", bg: "#3ECF8E", fg: "#0a0a0a" },
   { label: "Stripe", slug: "stripe", bg: "#635BFF", fg: "#ffffff" },
-  { label: "Node.js", slug: "nodedotjs", bg: "#3C873A", fg: "#ffffff" },
-  { label: "Tailwind CSS", slug: "tailwindcss", bg: "#2BBCF5", fg: "#ffffff" },
-  { label: "Docker", slug: "docker", bg: "#2496ED", fg: "#ffffff" },
+  {
+    label: "OpenAI",
+    slug: "openai",
+    bg: "#000000",
+    fg: "#ffffff",
+    iconUrl: "https://cdn.worldvectorlogo.com/logos/openai-2.svg",
+  },
+  { label: "OpenRouter", slug: "openrouter", bg: "#6C5CE7", fg: "#ffffff" },
+  { label: "TensorFlow", slug: "tensorflow", bg: "#FF6F00", fg: "#ffffff" },
+  { label: "MediaPipe", slug: "mediapipe", bg: "#00897B", fg: "#ffffff" },
   { label: "Python", slug: "python", bg: "#3776AB", fg: "#ffffff" },
+  { label: "Docker", slug: "docker", bg: "#2496ED", fg: "#ffffff" },
   { label: "Vercel", slug: "vercel", bg: "#0a0a0a", fg: "#ffffff" },
 ];
 
@@ -212,7 +225,7 @@ export function Stack(): ReactNode {
         </h3>
       </div>
 
-      <div className="border-foreground/5 bg-foreground/2 dark:bg-foreground/5 relative h-40 overflow-hidden rounded-4xl border sm:h-64">
+      <div className="border-foreground/5 bg-foreground/2 dark:bg-foreground/5 relative h-64 overflow-hidden rounded-4xl border sm:h-72">
         <button
           type="button"
           onClick={() => setResetKey((k) => k + 1)}
