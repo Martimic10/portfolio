@@ -9,6 +9,7 @@ type Entry = {
   role: string;
   period: string;
   slug?: string;
+  logo?: string;
   brand?: string;
 };
 
@@ -17,6 +18,7 @@ const ENTRIES: Entry[] = [
     company: "OriginLabs",
     role: "Founder & Full-Stack Developer",
     period: "June 2026 – Present",
+    logo: "/images/OriginLabs-logo2.png",
     brand: "#6366f1",
   },
 ];
@@ -132,10 +134,19 @@ function CompanyLogo({ entry }: { entry: Entry }): ReactNode {
       aria-hidden="true"
       style={{
         borderRadius: 14,
-        ...(entry.slug ? {} : { backgroundColor: entry.brand }),
+        ...(entry.slug || entry.logo ? {} : { backgroundColor: entry.brand }),
       }}
     >
-      {entry.slug ? (
+      {entry.logo ? (
+        <img
+          src={entry.logo}
+          alt=""
+          width={28}
+          height={28}
+          className="h-7 w-7 rounded-md object-cover"
+          draggable={false}
+        />
+      ) : entry.slug ? (
         <img
           src={`https://cdn.simpleicons.org/${entry.slug}`}
           alt=""
