@@ -21,6 +21,13 @@ const ENTRIES: Entry[] = [
     logo: "/images/OriginLabs-logo2.png",
     brand: "#6366f1",
   },
+  {
+    company: "Workiva",
+    role: "Frontend Developer",
+    period: "January 2024 – March 2026",
+    logo: "/images/workiva-logo.png",
+    brand: "#00b189",
+  },
 ];
 
 const COLLAPSED_COUNT = 2.5;
