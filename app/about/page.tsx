@@ -24,7 +24,7 @@ export default function AboutPage(): ReactNode {
             </h1>
             <div className="mt-8 space-y-6 text-[17px] leading-[1.7] tracking-tight text-foreground/75 sm:text-[18px]">
               <p>
-                A <strong className="font-semibold text-foreground">frontend developer</strong> passionate about building intuitive, high-performing digital products that merge design and functionality. I founded and operate <strong className="font-semibold text-foreground">OriginLabs</strong>, an independent software studio focused on building and launching AI-powered web and mobile applications.
+                A <strong className="font-semibold text-foreground">frontend developer</strong> passionate about building intuitive, high-performing digital products that merge design and functionality. I founded and operate <strong className="font-semibold text-foreground">OriginLabs</strong>, an independent software studio focused on building and launching AI-powered web and mobile applications. Before that, I spent over two years as a <strong className="font-semibold text-foreground">Frontend Developer at Workiva</strong>, building and maintaining high-performance React and TypeScript components and collaborating across design and backend teams to ship clean, scalable UI systems.
               </p>
               <p>
                 I design, develop, and deploy full SaaS products end-to-end &mdash; authentication systems, payment integrations, database architecture, responsive interfaces, and AI-powered workflows &mdash; using <strong className="font-semibold text-foreground">React, Next.js, TypeScript, Supabase, Stripe</strong>, and modern AI APIs, including OpenAI-compatible APIs, image generation, conversational AI, and workflow automation.
