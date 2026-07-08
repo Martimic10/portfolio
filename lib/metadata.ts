@@ -73,9 +73,9 @@ export const baseMetadata: Metadata = {
     creator: siteConfig.creator,
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-icon.png",
+    icon: "/images/Milo-ai-logo.png",
+    shortcut: "/images/Milo-ai-logo.png",
+    apple: "/images/Milo-ai-logo.png",
   },
   manifest: "/site.webmanifest",
 };

@@ -46,6 +46,11 @@ export default function RootLayout({
 }>): ReactNode {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/images/Milo-ai-logo.png" type="image/png" />
+        <link rel="shortcut icon" href="/images/Milo-ai-logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/Milo-ai-logo.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} min-h-screen bg-background font-sans text-foreground antialiased`}
       >
