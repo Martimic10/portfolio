@@ -22,13 +22,13 @@ export function Hero(): ReactNode {
             </p>
 
             <h1 className="text-[2.125rem] font-medium leading-[1.05] tracking-tight text-foreground md:text-[2.5rem] lg:text-[3.65rem]">
-              <span className="block whitespace-nowrap">UI/UX Designer &</span>
-              <span className="block whitespace-nowrap">Developer</span>
+              <span className="block whitespace-nowrap">Automation/</span>
+              <span className="block whitespace-nowrap">Software Engineer</span>
             </h1>
 
             <p className="max-w-[34ch] text-[22px] leading-[1.4] tracking-tight text-foreground/65">
-              Founder of OriginLabs, building AI-powered products that merge
-              design and functionality.
+              Building intelligent systems, automation solutions, and modern
+              software.
             </p>
 
             <HeroCtas />

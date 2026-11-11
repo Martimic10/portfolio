@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "Michael Martinez",
   description:
-    "Frontend developer and founder of OriginLabs, building AI-powered web and mobile products.",
+    "Automation/Software Engineer building intelligent systems, automation solutions, and modern software.",
   url: "https://michaelmartinez.vercel.app",
   ogImage: "/og-image.png",
   creator: "@Martimic10",
@@ -15,7 +15,11 @@ export const siteConfig = {
   ],
   keywords: [
     "Michael Martinez",
-    "frontend developer",
+    "automation engineer",
+    "software engineer",
+    "industrial automation",
+    "PLC programming",
+    "robotics",
     "portfolio",
     "OriginLabs",
     "React",

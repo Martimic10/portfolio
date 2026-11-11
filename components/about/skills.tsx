@@ -1,12 +1,15 @@
 import type { ReactNode } from "react";
 
 const SKILLS = [
-  "Frontend Development",
+  "Industrial Automation",
+  "PLC Programming",
+  "Robotics",
+  "Software Development",
+  "AI & Emerging Tech",
   "React & Next.js",
   "TypeScript",
   "Backend & API Design",
   "Mobile (React Native, SwiftUI, Flutter)",
-  "AI/ML Integration",
   "Cloud & DevOps",
   "Payments & Auth",
   "Product Strategy & UI/UX",
